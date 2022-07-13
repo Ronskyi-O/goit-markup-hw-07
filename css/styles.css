@@ -463,17 +463,17 @@ img {
   padding: 94px 0;
 }
 
-.portfolio .menu {
+.portfolio__menu {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.menu > .item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio .button {
+.menu__button {
   padding: 6px 22px;
 
   font-family: roboto, sans-serif;
@@ -495,22 +495,22 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .button:hover,
-.portfolio .button:focus {
+.menu__button:hover,
+.menu__button:focus {
   color: var(--additional-color);
   background-color: var(--hoover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio .list {
+.portfolio__list {
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio .card {
+.portfolio__card {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -524,39 +524,32 @@ img {
   position: relative;
 }
 
-.portfolio .card:nth-child(3n + 3) {
+.portfolio__card:nth-child(3n + 3) {
   margin-right: 0;
 }
 
-.portfolio .card:nth-last-child(-n + 3) {
+.portfolio__card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio .card:hover,
-.portfolio .card:focus {
+.portfolio__card:hover,
+.portfolio__card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .card:hover .overlay {
+.portfolio__card:hover .overlay {
   transform: translateY(-100%);
   overflow: visible;
 }
 
-.card > .discription {
-  padding: 20px 24px;
-
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-
-.portfolio .img-wrapper {
+.card__imgWrapper {
   position: relative;
 
   overflow: hidden;
 }
 
-.portfolio .overlay {
+.card__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,7 +564,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .overlay-text {
+.overlay__text {
   display: block;
   padding: 63px 24px;
 
@@ -583,14 +576,21 @@ img {
   color: var(--additional-color);
 }
 
-.portfolio .tittle {
+.card__discription {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.card__ittle {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio .text {
+.card__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;

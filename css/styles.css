@@ -226,30 +226,31 @@ img {
   padding: 94px 0;
 }
 
-.features > .container {
+.features__container {
   display: flex;
+  gap: 30px;
 }
 
-.features .card {
-  flex-basis: calc((100% - 90px) / 4);
-}
-
-.features .card:not(:last-child) {
-  margin-right: 30px;
-}
-
-.card > .box {
+.features__card {
   width: 270px;
+  min-height: 251px;
+}
+
+.features__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 
   border-radius: 4px;
 
   background-color: var(--additional-background-color);
 }
 
-.features .tittle {
+.features__tittle {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -258,7 +259,7 @@ img {
   text-transform: uppercase;
 }
 
-.features .text {
+.features__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

@@ -41,7 +41,7 @@ img {
   height: auto;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
@@ -55,14 +55,14 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header > .conteiner {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 /* Лого */
 
-.header .logo {
+.header__logo {
   margin-right: 93px;
 
   font-family: Raleway;
@@ -74,7 +74,7 @@ img {
   color: var(--main-color);
 }
 
-.header .span {
+.logo__span {
   color: var(--hoover-color);
 }
 
@@ -89,16 +89,16 @@ img {
   font-size: 14px;
 }
 
-.nav .item {
+.nav__item {
   display: block;
   position: relative;
 }
 
-.nav .item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav .menu {
+.nav__link {
   padding: 20px 0;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -109,12 +109,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav .menu:hover,
-.nav .menu:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--hoover-color);
 }
 
-.nav .menu.current::after {
+.nav__link--current::after {
   content: '';
   display: block;
   width: 100%;
@@ -127,7 +127,7 @@ img {
   bottom: -33px;
 }
 
-.nav .menu.current {
+.nav__link--current {
   padding-bottom: 33px;
   color: var(--hoover-color);
 }
@@ -137,13 +137,10 @@ img {
 .contacts {
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
-.contacts > .item:first-child {
-  margin-right: 30px;
-}
-
-.contact {
+.contacts__link {
   display: flex;
   align-items: center;
 
@@ -158,34 +155,14 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact:hover,
-.contact:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--hoover-color);
 }
 
-.contact > .icon-envelope {
-  width: 16px;
-  height: 12px;
+.contacts__icon {
   margin-right: 10px;
 
-  fill: currentColor;
-}
-
-.contact > .icon-envelope:hover,
-.contact > .icon-envelope:focus {
-  fill: currentColor;
-}
-
-.contact > .icon-smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-
-  fill: currentColor;
-}
-
-.contact > .icon-smartphone:hover,
-.contact > .icon-smartphone:focus {
   fill: currentColor;
 }
 
@@ -249,7 +226,7 @@ img {
   padding: 94px 0;
 }
 
-.features > .conteiner {
+.features > .container {
   display: flex;
 }
 
@@ -628,7 +605,7 @@ img {
   background-color: var(--footer-background-color);
 }
 
-.footer .conteiner {
+.footer .container {
   display: flex;
   align-items: baseline;
 }

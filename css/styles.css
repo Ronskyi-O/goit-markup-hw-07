@@ -181,7 +181,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero .tittle {
+.hero__tittle {
   margin: auto;
   margin-bottom: 30px;
   width: 696px;
@@ -195,7 +195,7 @@ img {
   color: var(--additional-color);
 }
 
-.hero .button {
+.hero__button {
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
@@ -215,8 +215,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--hoover-color-main-button);
 }
 

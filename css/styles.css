@@ -87,7 +87,7 @@ img {
   text-align: center;
 }
 
-.list {
+.cardSet {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,7 +342,7 @@ img {
   margin-bottom: 50px;
 }
 
-.products__list {
+.products__cardSet {
   position: relative;
 }
 
@@ -426,17 +426,10 @@ img {
   margin-bottom: 50px;
 }
 
-.clients__list {
-  display: flex;
-  margin: calc(-1 * 30px / 2);
-}
-
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: calc((100% - 30px * 6) / 6);
-  margin: calc(30px / 2);
   width: 170px;
   height: 92px;
 

@@ -26,11 +26,11 @@
 
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo logo" href="./index.html" lang="en"
+        <a class="header__logo logo logo--black" href="./index.html" lang="en"
           ><span class="logo__span">Web</span>Studio</a
         >
-        <nav>
-          <ul class="nav">
+        <nav class="nav">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html">Студия</a>
             </li>
@@ -42,8 +42,8 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li>
+        <ul class="header__contacts contacts">
+          <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -51,7 +51,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -188,7 +188,7 @@
               <ul class="team__socialMedia socialMedia">
                 <li class="socialMedia__item">
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -201,7 +201,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -214,7 +214,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -227,7 +227,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -253,7 +253,7 @@
               <ul class="team__socialMedia socialMedia">
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -266,7 +266,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -279,7 +279,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -292,7 +292,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -318,7 +318,7 @@
               <ul class="team__socialMedia socialMedia">
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -331,7 +331,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -344,7 +344,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -357,7 +357,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -383,7 +383,7 @@
               <ul class="team__socialMedia socialMedia">
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -396,7 +396,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -409,7 +409,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -422,7 +422,7 @@
                 </li>
                 <li>
                   <a
-                    class="socialMedia__link"
+                    class="socialMedia__link socialMedia__link--white"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -530,68 +530,72 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="container">
-        <div class="main">
-          <a class="logo" href="./index.html" lang="en"><span class="span">Web</span>Studio</a>
-          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul>
-            <li class="item">
-              <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <div class="footer__container container">
+        <div class="footer__main">
+          <a class="footer__logo logo logo--white" href="./index.html" lang="en"
+            ><span class="logo__span">Web</span>Studio</a
+          >
+          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="item"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="footer__item">
+              <a class="footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
         <div class="connect">
-          <strong class="tittle">присоединяйтесь</strong>
-          <ul class="networks">
-            <li class="network">
+          <strong class="connect__tittle">присоединяйтесь</strong>
+          <ul class="connect__socialMedia socialMedia">
+            <li class="socialMedia__item">
               <a
-                class="link"
+                class="socialMedia__link socialMedia__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="inatgram"
               >
-                <svg class="icon inatgram" width="20px" height="20px">
+                <svg class="socialMedia__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
+            <li class="socialMedia__item">
               <a
-                class="link"
+                class="socialMedia__link socialMedia__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter"
               >
-                <svg class="icon twitter" width="20px" height="20px">
+                <svg class="socialMedia__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
+            <li class="socialMedia__item">
               <a
-                class="link"
+                class="socialMedia__link socialMedia__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="facebook"
               >
-                <svg class="icon facebook" width="20px" height="20px">
+                <svg class="socialMedia__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="network">
+            <li class="socialMedia__item">
               <a
-                class="link"
+                class="socialMedia__link socialMedia__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
               >
-                <svg class="icon linkedin" width="20px" height="20px">
+                <svg class="socialMedia__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -599,20 +603,20 @@
           </ul>
         </div>
         <div class="subscribe">
-          <strong class="tittle">Подпишитесь на рассылку</strong>
-          <form class="form" name="subscribe">
-            <label>
+          <strong class="subscribe__tittle">Подпишитесь на рассылку</strong>
+          <form class="subscribe__form" name="subscribe">
+            <label class="subscribe__label">
               <input
-                class="field"
+                class="subscribe__field"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 autocomplete="on"
               />
             </label>
-            <button class="button" type="submit">
-              <span class="text">Подписаться</span>
-              <svg class="icon" width="24" height="24">
+            <button class="subscribe__button button" type="submit">
+              <span class="subscribe__text">Подписаться</span>
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>

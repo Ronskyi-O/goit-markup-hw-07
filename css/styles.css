@@ -41,6 +41,8 @@ img {
   height: auto;
 }
 
+/* Comon styles */
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -75,6 +77,21 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--hoover-color-main-button);
+}
+
+.tittle {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 /* Хедер */
@@ -259,7 +276,7 @@ img {
   background-color: var(--additional-background-color);
 }
 
-.features__tittle {
+.features__name {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -285,18 +302,9 @@ img {
 
 .products__tittle {
   margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 .products__list {
-  display: flex;
-  justify-content: space-between;
-
   position: relative;
 }
 
@@ -333,12 +341,6 @@ img {
 
 .team__tittle {
   margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 .team__list {
@@ -423,12 +425,6 @@ img {
 
 .clients__tittle {
   margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 .clients__list {
